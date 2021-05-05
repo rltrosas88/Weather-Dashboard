@@ -17,10 +17,74 @@
         <h1>Weather Dashboard</h1>
     </header>
 
-    <main>
+    <main class="container">
         <!-- search bar/form -->
-        <!-- current weather -->
-        <!-- 5 day forcast -->
+        <div class="row">
+            <div class="col-3">
+                <h2 class="">Search for a City</h2>
+            </div>
+            <div class="col-9"></div>
+        </div>
+
+        <!-- weather -->
+        <div class="row">
+            
+            <div class="col-3">
+                <form id="search-form" class="mb-2">
+                    <input id="search-input" class="form-input" type="text">
+                    <button id="btn"></button>
+                    <div id="history"></div>
+                </form>
+            </div>
+            
+            <!-- current weather -->
+            <div class="col-9">
+                <section class="border col-12">
+                    <h3 id="location"></h3>
+                    <div id="current_icon"></div>
+                    <p id="date"></p>
+                    <p id="temperature"></p>
+                    <p id="humidity"></p>
+                    <p id="windspeed"></p>
+                    <p id="uvindex"></p>
+                </section>
+                <!-- 5 day forcast -->
+                <h4> 5-Day Forecast:</h4>
+                <div class="card-deck">
+                    <div class="card">
+                        <p id="date-1"></p>
+                        <div id="icon-1"></div>
+                        <p id="temperture-1"></p>
+                        <p id="humidity-1"></p>
+                    </div>
+                    <div class="card">
+                        <p id="date-2"></p>
+                        <div id="icon-2"></div>
+                        <p id="temperture-2"></p>
+                        <p id="humidity-2"></p>
+                    </div>
+                    <div class="card">
+                        <p id="date-3"></p>
+                        <div id="icon-3"></div>
+                        <p id="temperture-3"></p>
+                        <p id="humidity-3"></p>
+                    </div>
+                    <div class="card">
+                        <p id="date-4"></p>
+                        <div id="icon-4"></div>
+                        <p id="temperture-4"></p>
+                        <p id="humidity-4"></p>
+                    </div>
+                    <div class="card">
+                        <p id="date-5"></p>
+                        <div id="icon-5"></div>
+                        <p id="temperture-5"></p>
+                        <p id="humidity-5"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </main>
 
 
